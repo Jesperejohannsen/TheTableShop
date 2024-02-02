@@ -1,11 +1,10 @@
-/* src/components/Navbar.css */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
-    background-color: #5A3921; /* Dark brown */
-    color: #FFF7E0; /* Light cream */
+    background-color: #5A3921; 
+    color: #FFF7E0; 
   }
   
   .logo {
@@ -18,6 +17,7 @@
     list-style: none;
     display: flex;
     gap: 20px;
+    font-size: large;
   }
   
   .nav-links a {
@@ -26,17 +26,10 @@
     transition: color 0.3s ease;
   }
   
-  .nav-links a:hover,
-  .nav-links .cart-link {
-    color: #F4D1AE; /* Lighter shade for hover and cart link */
+  .nav-links a:hover{
+    color: #F4D1AE; 
   }
-  
-  .cart-link {
-    background-color: #C47B5A; /* Soft brown */
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
+    
   .menu-icon {
     display: none;
     cursor: pointer;
