@@ -49,6 +49,39 @@
     background-color: #F4D1AE; 
     border-radius: 10px;
   }
+
+  .testimonials {
+    background-color: #FFF7E0; 
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .testimonial p {
+    color: #5A3921; 
+    font-style: italic;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  .author {
+    color: #C47B5A; 
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .testimonials button {
+    background-color: #C47B5A; 
+    color: #FFF7E0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .testimonials button:hover {
+    background-color: #5A3921; 
+  }
   
   @media (max-width: 780px) {
     .products-grid {
