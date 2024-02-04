@@ -1,10 +1,25 @@
-import React, { useState } from 'react';
-import './FrontPage.css';
+import React, { useState } from "react";
+import "./FrontPage.css";
+import WoodTableLivingRoom from "../../assets/woodtableinlivingroom.jpg";
+import WoodBench from "../../assets/woodBench.jpg";
+import WallHouse from "../../assets/wallHouse.jpg";
 
 const testimonials = [
-  { id: 1, text: "WoodWorks products have transformed my home office into a warm, inviting space. Highly recommend!", author: "Alex Johnson" },
-  { id: 2, text: "The craftsmanship is top-notch and the service was impeccable. A true gem for wooden accessories lovers.", author: "Casey Smith" },
-  { id: 3, text: "I bought a wooden desk organizer and it's not only functional but a beautiful piece of art.", author: "Jordan Lee" },
+  {
+    id: 1,
+    text: "WoodWorks products have transformed my home office into a warm, inviting space. Highly recommend!",
+    author: "Alex Johnson",
+  },
+  {
+    id: 2,
+    text: "The craftsmanship is top-notch and the service was impeccable. A true gem for wooden accessories lovers.",
+    author: "Casey Smith",
+  },
+  {
+    id: 3,
+    text: "I bought a wooden desk organizer and it's not only functional but a beautiful piece of art.",
+    author: "Jordan Lee",
+  },
 ];
 
 const HomePage: React.FC = () => {
@@ -23,10 +38,23 @@ const HomePage: React.FC = () => {
       </section>
       <section className="featured">
         <div className="products-grid">
-          {/* Placeholder for product components */}
-          <div className="product">Produkt 1</div>
-          <div className="product">Produkt 2</div>
-          <div className="product">Produkt 3</div>
+          <div className="product">
+            <img
+              className="FrontPageImages"
+              src={WoodTableLivingRoom}
+              alt="Wood Table Living Room"
+            />
+          </div>
+          <div className="product">
+            <img className="FrontPageImages" src={WoodBench} alt="Wood Bench" />
+          </div>
+          <div className="product">
+            <img
+              className="FrontPageImages"
+              src={WallHouse}
+              alt="Wood Wall House"
+            />
+          </div>
         </div>
       </section>
       <section className="testimonials">
