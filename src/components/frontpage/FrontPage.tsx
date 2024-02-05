@@ -3,6 +3,8 @@ import "./FrontPage.css";
 import WoodTableLivingRoom from "../../assets/woodtableinlivingroom.jpg";
 import WoodBench from "../../assets/woodBench.jpg";
 import WallHouse from "../../assets/wallHouse.jpg";
+import WoodStorage from "../../assets/woodStorage.jpg";
+import TTSLogo from "../../assets/logo.png";
 
 const testimonials = [
   {
@@ -46,13 +48,30 @@ const HomePage: React.FC = () => {
             />
           </div>
           <div className="product">
-            <img className="FrontPageImages" src={WoodBench} alt="Wood Bench" />
+            <img 
+              className="FrontPageImages" 
+              src={WoodBench} 
+              alt="Wood Bench" />
           </div>
           <div className="product">
             <img
               className="FrontPageImages"
-              src={WallHouse}
+              src={TTSLogo}
               alt="Wood Wall House"
+            />
+          </div>
+          <div className="product">
+            <img
+              className="FrontPageImages"
+              src={WallHouse} 
+              alt="Wood Table Living Room"
+            />
+          </div>
+          <div className="product">
+            <img
+              className="FrontPageImages"
+              src={WoodStorage}
+              alt="Wood Table Living Room"
             />
           </div>
         </div>

@@ -1,101 +1,119 @@
 .homePage {
-    color: #5A3921; 
-    padding: 20px;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #FFF7E0; 
-  }
-  
-  .hero h1 {
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    margin-bottom: 30px;
-  }
-  
-  .shopNow {
-    background-color: #C47B5A; 
-    color: #FFF7E0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .shopNow:hover {
-    background-color: #5A3921; 
-  }
-  
-  .featured {
-    padding: 20px 0;
-  }
-  
+  color: #5a3921;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff7e0;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+}
+
+.shopNow {
+  background-color: #c47b5a;
+  color: #fff7e0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shopNow:hover {
+  background-color: #5a3921;
+}
+
+.featured {
+  padding: 20px 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); 
+  gap: 30px; 
+  padding: 20px;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  overflow: hidden; 
+  background-color: #f4d1ae; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.product:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); 
+}
+
+.FrontPageImages {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px;
+}
+
+.testimonials {
+  background-color: #fff7e0;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.testimonial p {
+  color: #5a3921;
+  font-style: italic;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.author {
+  color: #c47b5a;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.testimonials button {
+  background-color: #c47b5a;
+  color: #fff7e0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.testimonials button:hover {
+  background-color: #5a3921;
+}
+
+.FrontPageImages {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 780px) {
   .products-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    grid-template-columns: 1fr;
   }
-  
+
   .product {
-    flex-basis: calc(33% - 20px); 
-    text-align: center;
-    padding: 20px;
-    background-color: #F4D1AE; 
-    border-radius: 10px;
+    flex-basis: 90%; 
   }
-
-  .testimonials {
-    background-color: #FFF7E0; 
-    text-align: center;
-    padding: 40px 20px;
-  }
-  
-  .testimonial p {
-    color: #5A3921; 
-    font-style: italic;
-    margin: 20px auto;
-    width: 80%;
-  }
-  
-  .author {
-    color: #C47B5A; 
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  .testimonials button {
-    background-color: #C47B5A; 
-    color: #FFF7E0;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .testimonials button:hover {
-    background-color: #5A3921; 
-  }
-
-  .FrontPageImages {
-    width: 100%;
-    height: 100%;
-  }
-  
-  @media (max-width: 780px) {
-    .products-grid {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .product {
-      flex-basis: 80%; 
-    }
-  }
-  
+}
