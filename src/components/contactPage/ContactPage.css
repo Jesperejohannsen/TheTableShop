@@ -1,0 +1,29 @@
+.contactCard {
+    background-color: #fff7e0;
+    color: #5a3921;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .businessName {
+    color: #5a3921;
+    margin-bottom: 20px;
+  }
+  
+  .contactInfo p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .contactInfo strong {
+    color: #c47b5a;
+  }
+
+  .contactCard:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
