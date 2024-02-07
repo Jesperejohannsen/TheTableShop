@@ -20,7 +20,7 @@ const ContactPage = () => {
         <div className="contactInfo">
             <p>
             <strong>Email:</strong> Jesper@test.com
-            </p>
+            </p> 
         </div>
       <div className="socialMedia">
         <p>
