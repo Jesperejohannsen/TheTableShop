@@ -9,20 +9,49 @@
     text-align: center;
   }
   
+  .logoPlaceholder {
+    margin-bottom: 20px;
+  }
+  
+  .businessLogo {
+    max-width: 100px; /* Adjust based on actual logo size */
+    margin-bottom: 20px;
+  }
+  
   .businessName {
     color: #5a3921;
     margin-bottom: 20px;
   }
   
-  .contactInfo p {
+  .contactInfo p, .socialMedia p {
     margin: 10px 0;
     font-size: 16px;
   }
   
-  .contactInfo strong {
+  .contactInfo strong, .socialMedia strong {
     color: #c47b5a;
   }
-
+  
+  /* Enhance visual separation */
+  .contactInfo, .socialMedia {
+    border-top: 1px solid #c47b5a;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Interactive Elements */
+  .socialMedia a {
+    display: inline-block;
+    margin: 0 5px;
+    color: #5a3921; /* Default text color */
+    transition: color 0.3s;
+  }
+  
+  .socialMedia a:hover {
+    color: #c47b5a; /* Hover color */
+  }
+  
+  /* Card hover effect */
   .contactCard:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
