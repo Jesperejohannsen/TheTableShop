@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
 
   const linkMapping = {
     Forside: "/",
-    Produkter: "/product",
+    Produkter: "/products",
     "Om TTS": "/about",
     Kontakt: "/contact",
   };
