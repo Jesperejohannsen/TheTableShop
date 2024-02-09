@@ -70,6 +70,21 @@
   border-top-right-radius: 10px;
 }
 
+.introductionTheTableShopFrontPage {
+  padding: 20px;
+  background-color: #fcf9f2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.introductionTheTableShopFrontPage h2 {
+  margin-bottom: 20px;
+}
+
+.introductionTheTableShopFrontPage p {
+  margin-bottom: 30px;
+}
+
 .testimonials {
   background-color: #fff7e0;
   text-align: center;
