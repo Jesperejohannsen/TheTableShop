@@ -27,6 +27,11 @@ const ContactPage = () => {
           <strong>Follow Us:</strong> [Social Media Links]
         </p>
       </div>
+      <div className="address">
+        <p>
+          <strong>Adresse:</strong> [Address]
+        </p>
+    </div>
     </div>
   );
 };
