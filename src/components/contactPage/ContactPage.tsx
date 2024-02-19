@@ -31,7 +31,12 @@ const ContactPage = () => {
         <p>
           <strong>Adresse:</strong> [Address]
         </p>
-    </div>
+      </div>
+      <div>
+        <p>
+          <strong>Åbningstider:</strong> [Opening Hours]
+        </p>
+      </div>
     </div>
   );
 };
