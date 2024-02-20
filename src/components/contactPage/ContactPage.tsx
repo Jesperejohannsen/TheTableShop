@@ -1,6 +1,23 @@
 import "./ContactPage.css";
 import TTSLogo from "../../assets/logo.png";
 
+let OpeningHours = [
+  "Mandag: 10:00 - 18:00",
+  "Tirsdag: 10:00 - 18:00",
+  "Onsdag: 10:00 - 18:00",
+  "Torsdag: 10:00 - 18:00",
+  "Fredag: 10:00 - 16:00",
+  "Lørdag: 10:00 - 12:00",
+  "Søndag: 10:00 - 12:00",
+];
+
+let SocialMediaLinks = [
+  "Facebook: [Link]",
+  "Instagram: [Link]",
+  "Twitter: [Link]",
+  "LinkedIn: [Link]",
+];
+
 const ContactPage = () => {
   return (
     <div className="contactCard">
@@ -24,7 +41,7 @@ const ContactPage = () => {
         </div>
       <div className="socialMedia">
         <p>
-          <strong>Follow Us:</strong> [Social Media Links]
+          <strong>Follow Us:</strong> {SocialMediaLinks.map((link) => <p>{link}</p>)}
         </p>
       </div>
       <div className="address">
@@ -34,7 +51,7 @@ const ContactPage = () => {
       </div>
       <div>
         <p>
-          <strong>Åbningstider:</strong> [Opening Hours]
+          <strong>Åbningstider:</strong> {OpeningHours.map((day) => <p>{day}</p>)}
         </p>
       </div>
     </div>
