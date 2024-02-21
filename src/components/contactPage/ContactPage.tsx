@@ -54,6 +54,11 @@ const ContactPage = () => {
           <strong>Åbningstider:</strong> {OpeningHours.map((day) => <p>{day}</p>)}
         </p>
       </div>
+      <div>
+        <p>
+          <strong>Find os her:</strong> [Google Maps Link]
+        </p>
+      </div>
     </div>
   );
 };
